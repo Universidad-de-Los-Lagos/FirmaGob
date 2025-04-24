@@ -44,7 +44,7 @@ export declare class FirmaGob {
     setConfig(run: string, entity: string, api_token: string, secret: string): void;
     setPurpose(purpose: Purpose): void;
     addJSON(content: string, checksum: string): void;
-    addPDF(content: string, checksum: string, layout?: string): void;
+    addPDF(content: string, checksum: string, layout?: string, description?: string): void;
     addXML(content: string, checksum: string, references: string[], xmlObjects: string[]): void;
     addFiles(files: FileProps[]): void;
     signFiles(otp?: string): Promise<FileOutputProps>;

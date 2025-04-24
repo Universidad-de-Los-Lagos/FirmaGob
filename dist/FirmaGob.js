@@ -92,10 +92,10 @@ var FirmaGob = (function () {
             checksum: checksum,
         });
     };
-    FirmaGob.prototype.addPDF = function (content, checksum, layout) {
+    FirmaGob.prototype.addPDF = function (content, checksum, layout, description) {
         this.files.push({
             "content-type": "application/pdf",
-            description: "str",
+            description: description !== null && description !== void 0 ? description : "str",
             content: content,
             checksum: checksum,
             layout: layout,

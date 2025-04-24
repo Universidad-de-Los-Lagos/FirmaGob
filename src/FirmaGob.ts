@@ -100,11 +100,12 @@ export class FirmaGob {
    * @param content Archivo en base64
    * @param checksum SHA256 del archivo
    * @param layout string opcional en caso de desear incrustar elemento al archivo PDF
+   * @param description
    */
-  addPDF(content: string, checksum: string, layout?: string) {
+  addPDF(content: string, checksum: string, layout?: string,description?: string) {
     this.files.push({
       "content-type": "application/pdf",
-      description: "str",
+      description: description ?? "str",
       content,
       checksum,
       layout,
