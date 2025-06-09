@@ -45,7 +45,7 @@ interface FileOutputProps {
 }
 
 export class FirmaGob {
-  private url = "https://api.firma.cert.digital.gob.cl/firma/v2/files/tickets"
+  private url = "https://api.firma.digital.gob.cl/firma/v2/files/tickets"
   private environment = Environment.TEST
   private entity = "Subsecretaría General de la Presidencia"
   private run = "22222222"

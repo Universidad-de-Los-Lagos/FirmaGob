@@ -65,7 +65,7 @@ var Purpose;
 })(Purpose || (exports.Purpose = Purpose = {}));
 var FirmaGob = (function () {
     function FirmaGob() {
-        this.url = "https://api.firma.cert.digital.gob.cl/firma/v2/files/tickets";
+        this.url = "https://api.firma.digital.gob.cl/firma/v2/files/tickets";
         this.environment = Environment.TEST;
         this.entity = "Subsecretaría General de la Presidencia";
         this.run = "22222222";
