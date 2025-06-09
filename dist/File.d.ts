@@ -1,3 +1,4 @@
+/// <reference types="node" />
 export declare class File {
     private isURL;
     private isPDF;
